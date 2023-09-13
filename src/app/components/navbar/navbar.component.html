@@ -1,0 +1,176 @@
+<header class="header-area">
+  <div class="container">
+      <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-12">
+              <div class="header-logo">
+                  <a href="index-2.html">
+                      <img src="assets/logo.png" alt="Awesome Logo">
+                  </a>
+              </div>
+          </div>
+          <div class="col-xl-9 col-lg-9 col-md-12">
+              <div class="header-contact-info">
+                  <ul>
+                      <li>
+                          <div class="iocn-holder">
+                            <span class="material-symbols-outlined">
+                              home
+                              </span>
+                          </div>
+                          <div class="text-holder">
+                              <strong>ADDRESS:</strong>
+                              <p>No. 71, Silvepura, 560 090</p>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="iocn-holder">
+                            <span class="material-symbols-outlined">
+                              phone_in_talk
+                              </span>
+                          </div>
+                          <div class="text-holder">
+                              <strong>PHONE:</strong>
+                              <p>(1-8016-7890-168)</p>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="link-btn">
+                            <button class="button-background-move" role="button"(click)="apply();">Apply Now</button>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>           
+      </div>
+  </div>
+ <!-- <hr width="100%" class="line">-->
+</header>
+
+
+<nav class="navbar navbar-expand-lg bg-body-light">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-light">
+        <div class="container-fluid">
+            <nav class="navbar bg-body-light">
+                <div class="container navlogo d-block d-lg-none"> <!-- Show on mobile, hide on laptop -->
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/logo.png" alt="Bootstrap" width="240" height="200">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </nav>
+    
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-symbols-outlined mx-2 transition"(click)="clicked();">
+          {{ isNavbarOpen ? 'close' : 'menu' }}
+          </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> <!-- Use mx-auto class to center the links -->
+          
+          
+          <li class="nav-item mx-3">
+            <a class="nav-link"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" aria-current="page" routerLink="">Home</a>
+          </li>
+          
+          
+          <li class="nav-item mx-3 dropdown dropdown-hover"> <!-- Add dropdown-hover class -->
+            <a class="nav-link"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="about">Overview</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="chairman">Chairman's Message</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }"routerLink="ceo">CEO's Message</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="secretary">Secretary's Message</a></li>
+              <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="director">Directors's Message</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="principal">Principal's Message</a></li>
+            </ul>
+          </li>
+         
+          
+          <li class="nav-item mx-3 dropdown dropdown-hover"> <!-- Add dropdown-hover class -->
+            <a class="nav-link"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Acadamics
+            </a>
+            <ul class="dropdown-menu">
+
+
+
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="bsc">BSc in Nursing</a></li>
+              <li><hr class="dropdown-divider"></li>              
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }"routerLink="msc">MSc in Nursing</a></li>
+              <li><hr class="dropdown-divider"></li>
+            
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="affiliations">Affiliations</a></li>
+            </ul>
+          </li>
+
+         
+         
+          <li class="nav-item mx-3 dropdown dropdown-hover"> <!-- Add dropdown-hover class -->
+            <a class="nav-link"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Facilities
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="clinical">Clinical Facilities</a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="laboratory">Laboratory</a></li>
+              <li><hr class="dropdown-divider"></li>             
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }"routerLink="library">Library</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="hostel">Hostel</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="canteen">Canteen</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="transportation">Transportation</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="sports">Sports</a></li>
+            </ul>
+          </li>
+         
+         
+          <!-- <li class="nav-item mx-3 dropdown dropdown-hover"> 
+            <a class="nav-link"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Students Corner
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="co-curricular">Co-Curricular Activities</a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="nri">NRI/International Students</a></li>
+              <li><hr class="dropdown-divider"></li>             
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }"routerLink="achivements">Achivements</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="testimonals">Testimonals</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" routerLink="alumni">Alumni</a></li>
+         
+            </ul>
+          </li> -->
+          
+          
+          <li class="nav-item mx-3">
+            <a class="nav-link"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }"routerLink="placement">Placements</a>
+          </li>
+        
+        
+          <li class="nav-item mx-3">
+            <a class="nav-link"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }"routerLink="gallary">Gallery</a>
+          </li>
+          
+          
+          <li class="nav-item mx-3">
+            <a class="nav-link"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }"routerLink="contactUs">Contact Us</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  

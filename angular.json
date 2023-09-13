@@ -2,6 +2,11 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "css"
+    }
+  },
   "projects": {
     "nursing": {
       "projectType": "application",
@@ -25,9 +30,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+             
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/aos/dist/aos.css",
+              "node_modules/owl.carousel/dist/assets/owl.carousel.css",
+  "node_modules/owl.carousel/dist/assets/owl.theme.default.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+            "node_modules/aos/dist/aos.js"]
           },
           "configurations": {
             "production": {
@@ -39,8 +50,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "100kb",
+                  "maximumError": "10mb"
                 }
               ],
               "outputHashing": "all"
@@ -87,6 +98,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []

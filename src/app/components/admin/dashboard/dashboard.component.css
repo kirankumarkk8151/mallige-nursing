@@ -1,0 +1,113 @@
+.sidebar .active
+{
+    color: white!important;
+}
+.tab-pane
+{
+    color: black!important;
+}
+.table td, th
+{
+     /*background-color: #1CB582!important;
+    color: white!important; */
+}
+.card-body
+{
+    /*background-color: #1CB582!important;
+    color: white!important; */ 
+}
+
+@media only screen and (max-width: 800px) {
+    .sidebar{
+        display: none;
+        
+    }
+  
+}
+@media only screen and (min-width: 800px) {
+    .mobile{
+        display: none;
+    }
+  
+}
+.modal-dialog,.modal-body
+{
+    z-index: 100000!important;
+    
+}
+.navbar
+{
+    z-index: 0!important;
+}
+/* Add this to your CSS styles */
+.image-size {
+    height: 200px; /* Adjust the desired height */
+    object-fit: cover;
+  }
+
+
+  body{
+    
+    background-color:#B3E5FC;
+    border-radius: 10px;
+
+}
+
+
+.profile{
+  width: 400px;
+  border: none;
+  border-radius: 10px;
+   
+  background-color: #fff;
+}
+
+
+
+.stats{
+
+      background: #f2f5f8 !important;
+
+    color: #000 !important;
+}
+.articles{
+  font-size:10px;
+  color: #a1aab9;
+}
+.number1{
+  font-weight:500;
+}
+.followers{
+    font-size:10px;
+  color: #a1aab9;
+
+}
+.number2{
+  font-weight:500;
+}
+.rating{
+    font-size:10px;
+  color: #a1aab9;
+}
+.number3{
+  font-weight:500;
+}
+.sidebar .nav-link
+{
+
+  border:2px solid #1CB582;
+  margin-top: 6px;
+}
+.sidebar .active
+{
+ 
+}
+
+
+
+
+  
+ 
+  
+
+  

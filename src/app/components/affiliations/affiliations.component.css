@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap');
+.about
+{
+  background-color: #004136;
+  padding :30px;
+}
+.about h2{
+  color:#1CB582;
+  font-size: 35px;
+  text-align: left;
+  margin-left: 8px;
+  font-family: 'Domine', serif;
+}
+.about p{
+  margin: 10px;
+  color: whitesmoke;
+  text-align: left;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+  @media only screen and (max-width: 600px) {
+ 
+    .image-half
+    {
+        display: none;
+    }
+    .col-xl-2
+	{
+		display: none;
+	}
+  }
+
+.principals{
+  color: #1CB582;
+}
+p
+{
+  font-family: Raleway;
+  font-weight: 700;
+  
+}
+th{
+  background-color: #1CB582;
+  color: whitesmoke;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@300&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+  
+
+td{
+  font-family: poppins;
+  background-color: honeydew;
+}
+th{
+  background-color: #1CB582!important;
+  color: white!important;
+}
+img
+{
+    width: 30%;
+}
+.col-md-6
+{
+    
+    padding: 20px;
+}
+.one
+{
+    background-color: beige;
+}

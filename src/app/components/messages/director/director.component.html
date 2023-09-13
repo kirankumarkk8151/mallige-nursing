@@ -1,0 +1,255 @@
+
+
+<app-banner [title]="'Director'"></app-banner>
+
+
+
+
+<section class="blog-single-section sp-three my-3">
+  <div class="container">
+      <div class="row">
+          <div class="col-xl-10 col-sm-12">
+              <div class="left-side-area">
+                  <div class="blog-item-one">
+                     
+                      
+                  </div>
+
+                
+                </div></div>
+          <div class="col-xl-2 col-sm-12">
+            <html><head>
+              <title>Vertical Menu</title> 
+              <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css' />
+              <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.0.min.js" ></script>
+              
+              <link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" rel="stylesheet" />
+              <!--[if IE 7]>
+              <link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome-ie7.min.css" rel="stylesheet" />
+              <![endif]-->
+                
+              <script>
+              $(document).ready(function() {
+                $('ul.form li a').click(
+                  function(e) {
+                    e.preventDefault(); // prevent the default action
+                    e.stopPropagation; // stop the click from bubbling
+                    $(this).closest('ul').find('.selected').removeClass('selected');
+                    $(this).parent().addClass('selected');
+                  });
+              });
+              </script>	
+              <style>
+              body {
+                
+                margin:0;
+                padding:0;
+                font-family:Quicksand;
+                font-weight:700;
+              }
+            
+              ul.form {
+                position:absolute;
+                 left:20px;
+                background:#fff;
+                width:200px;
+                            z-index:10;
+                margin:100;
+                padding:0;
+                list-style: none;
+                overflow:hidden;
+                
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;	
+                
+                -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+                box-shadow:  10px 0px 10px rgba(0, 0, 0, 0.1);	
+              }
+            
+              .form li a {
+                width:225px;
+                padding-left:15px;
+                height:40px;
+                line-height:40px;
+                display:block;
+                overflow:hidden;
+                position:relative;
+                text-decoration:none;
+                text-transform:uppercase;
+                font-size:12px;
+                color:#686868;
+                
+                -webkit-transition:all 0.1s linear;
+                -moz-transition:all 0.1s linear;
+                -o-transition:all 0.1s linear;
+                transition:all 0.2s linear;			
+              }
+            
+              .form li a:hover {
+                background:#efefef;
+              }
+            
+              .form li a.profile {
+                border-left:5px solid #008747;
+              }
+            
+              .form li a.messages {
+                  border-left:5px solid #fecf54;
+              }
+                
+              .form li a.settings {
+                  border-left:5px solid #cf2130;
+              }
+            
+              .form li a.logout {
+                  border-left:5px solid #FF3385;
+              }	
+            
+              .form li a.western {
+                  border-left:5px solid #0099FF;
+              }	
+            
+              .form li a.fantasy {
+                  border-left:5px solid #66FF99;
+              }
+            
+              .form li:first-child a:hover, .form li:first-child a {
+                -webkit-border-radius: 5px 5px 0 0;
+                -moz-border-radius: 5px 5px 0 0;
+                border-radius: 5px 5px 0 0;
+              }
+            
+              .form li:last-child a:hover, .form li:last-child a {
+                -webkit-border-radius: 0 0 5px 5px;
+                -moz-border-radius: 0 0 5px 5px;
+                border-radius: 0 0 5px 5px;
+              }
+            
+              .form li a:hover i {
+                color:#ea4f35;
+              }
+            
+              .form i {
+                margin-right:15px;
+                
+                -webkit-transition:all 0.2s linear;
+                -moz-transition:all 0.2s linear;
+                -o-transition:all 0.2s linear;
+                transition:all 0.2s linear;	
+              }
+            
+              .form em {
+                font-size: 10px;
+                background: #ea4f35;
+                padding: 3px 5px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;		
+                font-style: normal;
+                color: #fff;
+                margin-top: 17px;
+                margin-right: 15px;
+                line-height: 10px;
+                height: 10px;		
+                float:right;
+              }
+            
+              .form li.selected a {
+                background:#efefef;
+              }
+            
+              h1 {
+                color:#fff;
+                background-color: #1CB582!important;
+margin-left: 30px!important;
+                margin:0 auto;
+                margin-top:10px;
+                margin-bottom:40px;
+                font-size:30px;
+                
+                text-align:center;
+              }
+              </style>	
+            </head>
+            
+            <body>
+            
+              
+              <ul class="form">
+             
+                <li><a class="messages" (click)="navigateToChairman();"> <i class="icon-envelope-alt"></i>Chairman's Message</a></li>
+                <li><a class="settings"routerLink="ceo"(click)="navigateToCeo();">  <i class="icon-envelope-alt"></i>CEO's Message</a></li>
+                <li><a class="logout" routerLink="secretary"(click)="navigateToSecretary();">    <i class="icon-envelope-alt"></i>Secretary's Message</a></li>
+                <li><a class="western" routerLink="director"(click)="navigateToDirector();">    <i class="icon-envelope-alt"></i>Director's Message</a></li>
+                <li><a class="fantasy" routerLink="principal"(click)="navigateToPrincipal();">    <i class="icon-envelope-alt"></i>Principal's Message</a></li>
+              </ul>
+            
+            </body>
+            </html>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<div class="my-5">
+
+    <h2><span class="principals mx-3">DIRECTOR'S</span> MESSAGE</h2>
+
+<div class="principal d-flex justify-content-center my-4">
+
+<img src="assets/director.png" class="princi"data-aos="fade-right" data-aos-duration="2000">
+<div class="div mx-3"data-aos="fade-left" data-aos-duration="2000" >
+<h4 class="principals">DR.SHIVAKUMAR SWAMY</h4>
+<h5>Director</h5>
+</div>
+
+</div>
+
+<div class="message my-4 mx-3"data-aos="fade-up" data-aos-duration="2000">
+    <p class="text-justify">I feel pleasure in extending a very warm welcome to Mallige College of Nursing to the new aspirants seeking admission in this institute, for structuring their career in Nursing field. At Mallige of Nursing, we believe that sustainable development is the key to success and we have aligned ourselves to this mission.<br>
+      We strongly believe that the nursing students are responsible and accountable for quality nursing practice thus they need to be appropriately trained, oriented and directly supervised by qualified and experienced faculty. <br>
+      Carefully selected faculty, purpose-built infrastructure, access to modern facilities, regulated and well-monitored training and education methodologies, encouraging and supportive environment blends all positive qualities leading to produce highly demanded, well-groomed and confident professional nurses from this College of Nursing.
+      
+        <br><br>
+        With best wishes,<br>
+        Dr.Shivakumar Swamy,<br>
+        Director,<br>
+       
+        Mallige College of Nursing<br>
+        Bengaluru<br>
+        
+</div>
+</div>
+
+
+
+
+
+<div class="vm">
+    <table class="table table-bordered table-striped table-hover">
+      <thead class="thead-light">
+        <tr>
+          <th class="text-center">Vision</th>
+          <th class="text-center">Mission</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-aos="flip-right" data-aos-duration="2000">To become a "Centre of excellence" by providing quality and research oriented Pharmacy education to meet the needs of the industry, community and other stake holders through continuous training and up-gradation of infrastructure of learning and practicing Pharmacy profession.</td>
+          <td data-aos="flip-left" data-aos-duration="2000">To become a "Centre of excellence" by providing quality and research oriented Pharmacy education to meet the needs of the industry, community and other stake holders through continuous training and up-gradation of infrastructure of learning and practicing Pharmacy profession.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

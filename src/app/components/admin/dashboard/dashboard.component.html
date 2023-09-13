@@ -1,0 +1,1023 @@
+<ul class="nav mobile nav-pills mb-3 flex-nowrap overflow-x-auto container"id="v-pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Dashboard</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Applications</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Queries</button></li>
+   
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="v-pills-announcements-tab" data-bs-toggle="pill" data-bs-target="#v-pills-announcements" type="button" role="tab" aria-controls="v-pills-announcements" aria-selected="false">Announcements</button></li>
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="v-pills-events-tab" data-bs-toggle="pill" data-bs-target="#v-pills-events" type="button" role="tab" aria-controls="v-pills-events" aria-selected="false">Profile</button></li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="v-pills-gallery-tab" data-bs-toggle="pill" data-bs-target="#v-pills-gallery" type="button" role="tab" aria-controls="v-pills-gallery" aria-selected="false">Gallery</button></li>
+    
+
+
+  </ul>
+<div class="d-flex align-items-start mx-3 my-3">
+    <div class="nav sidebar flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+      
+        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Dashboard</button>
+
+      <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Applications</button>
+     
+      <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Queries</button>
+
+      <button class="nav-link" id="v-pills-announcements-tab" data-bs-toggle="pill" data-bs-target="#v-pills-announcements" type="button" role="tab" aria-controls="v-pills-announcements" aria-selected="false">Announcements</button>
+
+      
+      <button class="nav-link" id="v-pills-gallery-tab" data-bs-toggle="pill" data-bs-target="#v-pills-gallery" type="button" role="tab" aria-controls="v-pills-gallery" aria-selected="false">Gallery</button>
+
+      <button class="nav-link" id="v-pills-events-tab" data-bs-toggle="pill" data-bs-target="#v-pills-events" type="button" role="tab" aria-controls="v-pills-events" aria-selected="false">Profile</button>
+
+      <button class="nav-link" id="v-pills-logout-tab" data-bs-toggle="pill" data-bs-target="#v-pills-logout" type="button" role="tab" aria-controls="v-pills-logout" aria-selected="false" (click)="logout();">Logout</button>
+
+
+    </div>
+
+
+
+
+  
+
+    <div class="container">
+    
+        <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+
+       
+
+       
+       <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css">
+       <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css">
+       
+      
+       
+       
+       <div class="grey-bg container-fluid">
+         <section id="minimal-statistics">
+           <div class="row">
+             <div class="col-12 mt-3 mb-4">
+               <h4 class="text-uppercase">Welcome {{user.user.username}}</h4>
+              
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-xl-3 col-sm-6 col-12"> 
+               <div class="card">
+                 <div class="card-content">
+                   <div class="card-body">
+                     <div class="media d-flex">
+                       <div class="align-self-center">
+                         <i class="icon-pencil primary font-large-2 float-left"></i>
+                       </div>
+                       <div class="media-body text-right">
+                         <h3>{{no_applications}}</h3>
+                         <span>Total Applications</span>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="col-xl-3 col-sm-6 col-12">
+               <div class="card">
+                 <div class="card-content">
+                   <div class="card-body">
+                     <div class="media d-flex">
+                       <div class="align-self-center">
+                         <i class="icon-speech warning font-large-2 float-left"></i>
+                       </div>
+                       <div class="media-body text-right">
+                        <h3>{{no_messages}}</h3>
+                         <span>Total Messages</span>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="col-xl-3 col-sm-6 col-12">
+               <div class="card">
+                 <div class="card-content">
+                   <div class="card-body">
+                     <div class="media d-flex">
+                       <div class="align-self-center">
+                         <i class="icon-graph success font-large-2 float-left"></i>
+                       </div>
+                       <div class="media-body text-right">
+                        <h3>{{no_announcments}}</h3>
+                        <span>Total Announcements</span>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="col-xl-3 col-sm-6 col-12">
+               <div class="card">
+                 <div class="card-content">
+                   <div class="card-body">
+                     <div class="media d-flex">
+                       <div class="align-self-center">
+                         <i class="icon-pointer danger font-large-2 float-left"></i>
+                       </div>
+                       <div class="media-body text-right">
+                        <h3>{{no_images}}</h3>
+                         <span>Total Images in Gallery</span>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         
+           <!-- <div class="row">
+             <div class="col-xl-3 col-sm-6 col-12">
+               <div class="card">
+                 <div class="card-content">
+                   <div class="card-body">
+                     <div class="media d-flex">
+                       <div class="media-body text-left">
+                         <h3 class="danger">278</h3>
+                         <span>New Projects</span>
+                       </div>
+                       <div class="align-self-center">
+                         <i class="icon-rocket danger font-large-2 float-right"></i>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="col-xl-3 col-sm-6 col-12">
+               <div class="card">
+                 <div class="card-content">
+                   <div class="card-body">
+                     <div class="media d-flex">
+                       <div class="media-body text-left">
+                        <h3>{{no_users}}</h3>
+                        <span>Total Users</span>
+                       </div>
+                       <div class="align-self-center">
+                         <i class="icon-user success font-large-2 float-right"></i>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+         
+           </div> -->
+          </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+      <div class="tab-pane fade my-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+
+        <div class="row">
+            <h4 class="text-uppercase">Applications Recieved</h4>
+            <div class="col-md-4" *ngFor="let i of applications">
+                <div class="card shadow mb-4">
+                    <div class="card-body">
+                      
+                        <p><strong>Full Name:</strong> {{ i.fullName }}</p>
+                        <p><strong>Email:</strong> <a href="mailto:{{ i.email }}" class="mail"> {{ i.email }}</a></p>
+                        <p><strong>Phone:</strong> {{ i.phone }}</p>
+                        <p><strong>Age:</strong> {{ i.age }}</p>
+                        <p><strong>Course:</strong> {{ i.course }}</p>
+                        <p><strong>Nationality:</strong> {{ i.nationality }}</p>
+                        <p><strong>State:</strong> {{ i.state }}</p>
+                        <p><strong>Gender:</strong> {{ i.gender }}</p>
+                        <p><strong>Education:</strong> {{ i.education }}</p>
+                        <p><strong>Percentage:</strong> {{ i.percentage }}</p>
+                        <p><strong>Year of Passing:</strong> {{ i.passingYear }}</p>
+                        <p><strong>Address:</strong> {{ i.address }}</p>
+                        <p><strong>Additional Details:</strong> {{ i.additionalDetails }}</p>
+                        <button class="btn btn btn-sm btn-danger float-right" (click)='deleteApplication(i._id)'>Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+</div>
+      
+      <div class="tab-pane fade my-4" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+        <h4 class="text-uppercase">Message from Contact Form</h4>
+        <div class="table-responsive">
+        <table class="table   table-hover">
+        <thead>
+            <tr >
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Message</th>
+                <th>Actions</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of contacts">
+                <td>{{ i.fullName }}</td>
+                <td><a href="mailto:{{ i.email }}" class="mail"> {{ i.email }}</a></td>
+                <td>{{ i.subject }}</td>
+                <td class="">{{ i.message }}</td>
+                <td style="text-align: center;">
+                    <button class="btn btn-sm btn-danger my-auto"(click)='deleteContact(i._id)'>Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    </div>
+
+
+      <div class="tab-pane fade" id="v-pills-announcements" role="tabpanel" aria-labelledby="v-pills-announcements-tab" tabindex="0">
+        <div class="head d-flex justify-content-between my-2">
+        <h4 class="text-uppercase">News & Announcements</h4> <button class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Add News/Announcement</button></div>
+        <div class="table-responsive">
+            <table class="table  table-hover">
+            <thead>
+                <tr >
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Actions</th>
+    
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of announcments">
+                    <td>{{ i.title }}</td>
+                    <td> {{ i.description }}</td>
+                    <td>{{i.date}} {{i.month}} {{i.year}}</td>
+                    <td class="">{{i.startTime}} - {{i.endTime}}</td>
+                    <td style="">
+                      <div class="d-flex">
+                        <button class="btn btn-sm btn-success my-auto mx-1" data-bs-toggle="modal" data-bs-target="#exampleModaledit" (click)="editAnn(i)">Edit</button>
+                        <button class="btn btn-sm btn-danger my-auto mx-auto" (click)="deleteAnnoncemnent(i._id)">Delete</button>
+                      </div>
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Add Announcment</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title" name="title" required [(ngModel)]="title">
+              </div>
+              <div class="col-md-6">
+                <label for="description" class="form-label">Description</label>
+                <input type="text" class="form-control" id="description" name="description" required [(ngModel)]="description">
+              </div>
+              <div class="col-md-6">
+                <label for="image" class="form-label">Image:</label>
+                <input type="file" class="form-control" id="image" (change)="onImageSelected($event)">
+              </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="month" class="form-label">Month</label>
+                <select class="form-select" id="month" name="month" required [(ngModel)]="month">
+                  <option value="">Select Month</option>
+                  <option value="Jan">Jan</option>
+                  <option value="Feb">Feb</option>
+                  <option value="Mar">Mar</option>
+                  <option value="Apr">Apr</option>
+                  <option value="May">May</option>
+                  <option value="Jun">Jun</option>
+                  <option value="Jul">Jul</option>
+                  <option value="Aug">Aug</option>
+                  <option value="Sep">Sep</option>
+                  <option value="Oct">Oct</option>
+                  <option value="Nov">Nov</option>
+                  <option value="Dec">Dec</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="year" class="form-label">Year</label>
+                <select class="form-select" id="year" name="year" required [(ngModel)]="year">
+                  <option value="">Select Year</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2023</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
+                  <option value="2030">2030</option>
+                  <option value="2031">2031</option>
+                  <option value="2032">2032</option>
+                  <option value="2033">2033</option>
+                  <option value="2034">2034</option>
+                  <option value="2035">2035</option>
+
+                </select></div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="date" class="form-label">Date</label>
+                <select class="form-select" id="date" name="date" required [(ngModel)]="date">
+                    <option value="">Select Date</option>
+                    <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+
+                  <!-- Generate dates dynamically from 1 to 31 -->
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="startTime" class="form-label">Start Time</label>
+                <input type="time" class="form-control" id="startTime" name="startTime" required [(ngModel)]="startTime">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="endTime" class="form-label">End Time</label>
+                <input type="time" class="form-control" id="endTime" name="endTime" required [(ngModel)]="endTime">
+              </div>
+              <!-- You can add more fields or buttons here if needed -->
+            </div>
+            <!-- Add a submit button or other form controls here -->
+          </form>
+          
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="addAnnouncment();">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModaledit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add Announcment</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="title" class="form-label">Title</label>
+                  <input type="text" class="form-control" id="title" name="title" required [(ngModel)]="title_edit">
+                </div>
+                <div class="col-md-6">
+                  <label for="description" class="form-label">Description</label>
+                  <input type="text" class="form-control" id="description" name="description" required [(ngModel)]="description_edit">
+                </div>
+                
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="month" class="form-label">Month</label>
+                  <select class="form-select" id="month" name="month" required [(ngModel)]="month_edit">
+                    <option value="">Select Month</option>
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Mar">Mar</option>
+                    <option value="Apr">Apr</option>
+                    <option value="May">May</option>
+                    <option value="Jun">Jun</option>
+                    <option value="Jul">Jul</option>
+                    <option value="Aug">Aug</option>
+                    <option value="Sep">Sep</option>
+                    <option value="Oct">Oct</option>
+                    <option value="Nov">Nov</option>
+                    <option value="Dec">Dec</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="year" class="form-label">Year</label>
+                  <select class="form-select" id="year" name="year" required [(ngModel)]="year_edit">
+                    <option value="">Select Year</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2023</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                    <option value="2033">2033</option>
+                    <option value="2034">2034</option>
+                    <option value="2035">2035</option>
+  
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="date" class="form-label">Date</label>
+                  <select class="form-select" id="date" name="date" required [(ngModel)]="date_edit">
+                      <option value="">Select Date</option>
+                      <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+  
+                    <!-- Generate dates dynamically from 1 to 31 -->
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="startTime" class="form-label">Start Time</label>
+                  <input type="time" class="form-control" id="startTime" name="startTime" required [(ngModel)]="startTime_edit">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="endTime" class="form-label">End Time</label>
+                  <input type="time" class="form-control" id="endTime" name="endTime" required [(ngModel)]="endTime_edit">
+                </div>
+                <!-- You can add more fields or buttons here if needed -->
+              </div></div>
+              <!-- Add a submit button or other form controls here -->
+            </form>
+            
+  
+  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="editAnnouncment();" data-bs-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      </div>
+
+
+
+
+      <div class="tab-pane fade" id="v-pills-events" role="tabpanel" aria-labelledby="v-pills-events-tab" tabindex="0">
+        <h4 class="text-uppercase">Profile</h4>
+
+        <div class="toast align-items-center text-bg-success border-0 my-3 mx-auto" id="successToast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body">
+              {{registerMessage}}
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+
+
+        <div class="toast align-items-center text-bg-danger border-0 my-3 mx-auto" id="errorToast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body">
+              {{registerMessage}}
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+       
+       
+        <div class="container  d-flex justify-content-center">
+
+          <div class="card profile p-3">
+
+              <div class="d-flex align-items-center">
+
+                  <div class="image">
+              <img src="assets/admin.png" class="rounded" width="155" >
+              </div>
+
+              <div class="ml-3 w-100">
+                  
+                 <h4 class="mb-0 mt-0">{{user.user.username}}</h4>
+                 <span>{{user.user.email}}</span>
+
+             
+
+
+                 <div class="button mt-2 d-flex flex-row align-items-center">
+
+                  <button class="btn btn-sm btn-outline-success w-100" data-bs-toggle="modal" data-bs-target="#changepassword">Change Password</button>
+                  <button class="btn btn-sm btn-outline-primary w-100 ml-2"data-bs-toggle="modal" data-bs-target="#changepassword1">Add Users</button>
+
+                     
+                 </div>
+
+
+              </div>
+
+                  
+              </div>
+              
+          </div>
+           
+       </div>
+    
+        
+        
+        
+
+<!-- Modal -->
+<div class="modal fade" id="changepassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Change Password</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <label for="title" class="form-label">Existing Password</label>
+            <input type="password" class="form-control" id="pass" name="pass"[(ngModel)]='expass'>
+          </div>
+          <div class="col-md-12">
+            <label for="description" class="form-label">New Password</label>
+            <input type="password" class="form-control" id="np" name="np" [(ngModel)]='newpass'>
+          </div>
+          <div class="col-md-12">
+            <label for="description" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="cp" name="cp"[(ngModel)]='confpass' >
+          </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"data-bs-dismiss="modal"(click)="changePassword();">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+<!-- Modal -->
+<div class="modal fade" id="changepassword1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="changepassword1">Add User</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <label for="title" class="form-label">Username</label>
+            <input type="text" class="form-control" id="pass" name="pass"[(ngModel)]='nusername'>
+          </div>
+          <div class="col-md-12">
+            <label for="description" class="form-label">Email</label>
+            <input type="email" class="form-control" id="np" name="np"[(ngModel)]='nemail' >
+          </div>
+          <div class="col-md-12">
+            <label for="description" class="form-label">Password</label>
+            <input type="password" class="form-control" id="np" name="np" [(ngModel)]='npassword'>
+          </div>
+          <div class="col-md-12">
+            <label for="description" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="cp" name="cp"[(ngModel)]='cpassword' >
+          </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"(click)='registerUser();'data-bs-dismiss="modal">Add User</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        </div>
+        
+        
+        
+        
+        
+        <!--
+        <div class="table-responsive">
+            <table class="table  table-hover">
+                <thead>
+                    <tr >
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                        
+        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let i of events">
+                        <td>{{ i.title }}</td>
+                        <td> {{ i.description }}</td>
+                        <td>{{i.date}} {{i.month}} {{i.year}}</td>
+                        
+                        <td style="text-align: center;">
+                            <button class="btn btn-outline-primary my-auto"data-bs-toggle="modal" data-bs-target="#addEvent">Add</button>
+                    <button class="btn btn-outline-success my-auto mx-1"data-bs-toggle="modal" data-bs-target="#editEvent"(click)='editEv(i)'>Edit</button>
+                            <button class="btn btn-outline-danger my-auto"(click)='deleteEvent(i._id)'>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+
+
+<div class="modal fade" id="addEvent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add Event</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="title" class="form-label">Title</label>
+                  <input type="text" class="form-control" id="title" name="title" required [(ngModel)]="title_event">
+                </div>
+                <div class="col-md-6">
+                  <label for="description" class="form-label">Description</label>
+                  <input type="text" class="form-control" id="description" name="description_event" required [(ngModel)]="description_event">
+                </div>
+             
+            
+            
+
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="month" class="form-label">Month</label>
+                  <select class="form-select" id="month" name="month" required [(ngModel)]="month_event">
+                    <option value="">Select Month</option>
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Mar">Mar</option>
+                    <option value="Apr">Apr</option>
+                    <option value="May">May</option>
+                    <option value="Jun">Jun</option>
+                    <option value="Jul">Jul</option>
+                    <option value="Aug">Aug</option>
+                    <option value="Sep">Sep</option>
+                    <option value="Oct">Oct</option>
+                    <option value="Nov">Nov</option>
+                    <option value="Dec">Dec</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="year" class="form-label">Year</label>
+                  <select class="form-select" id="year" name="year" required [(ngModel)]="year_event">
+                    <option value="">Select Year</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2023</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                    <option value="2033">2033</option>
+                    <option value="2034">2034</option>
+                    <option value="2035">2035</option>
+  
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="date" class="form-label">Date</label>
+                  <select class="form-select" id="date" name="date" required [(ngModel)]="date_event">
+                      <option value="">Select Date</option>
+                      <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+  
+                    
+                  </select>
+                </div>
+              
+         
+              </div></div>
+      
+            </form>
+            
+  
+  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="addEvent();"data-bs-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+
+  <div class="modal fade" id="editEvent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Announcment</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title" name="title" required [(ngModel)]="title_edit_event">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="description" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="description" name="description" required [(ngModel)]="description_edit_event">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="month" class="form-label">Month</label>
+                    <select class="form-select" id="month" name="month" required [(ngModel)]="month_edit_event">
+                      <option value="">Select Month</option>
+                      <option value="Jan">Jan</option>
+                      <option value="Feb">Feb</option>
+                      <option value="Mar">Mar</option>
+                      <option value="Apr">Apr</option>
+                      <option value="May">May</option>
+                      <option value="Jun">Jun</option>
+                      <option value="Jul">Jul</option>
+                      <option value="Aug">Aug</option>
+                      <option value="Sep">Sep</option>
+                      <option value="Oct">Oct</option>
+                      <option value="Nov">Nov</option>
+                      <option value="Dec">Dec</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="year" class="form-label">Year</label>
+                    <select class="form-select" id="year" name="year" required [(ngModel)]="year_edit_event">
+                      <option value="">Select Year</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <option value="2024">2023</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2028</option>
+                      <option value="2029">2029</option>
+                      <option value="2030">2030</option>
+                      <option value="2031">2031</option>
+                      <option value="2032">2032</option>
+                      <option value="2033">2033</option>
+                      <option value="2034">2034</option>
+                      <option value="2035">2035</option>
+    
+                    </select>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="date" class="form-label">Date</label>
+                    <select class="form-select" id="date" name="date" required [(ngModel)]="date_edit_event">
+                        <option value="">Select Date</option>
+                        <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+    
+                  
+                    </select>
+                  </div>
+                 
+               
+                </div>
+       
+              </form>
+              
+    
+    
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" (click)="editEvent();"data-bs-dismiss="modal">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>-->
+  
+
+    </div>
+    
+
+    <div class="tab-pane fade" id="v-pills-gallery" role="tabpanel" aria-labelledby="v-pills-gallery-tab" tabindex="0">
+
+<div>
+
+    <div class="container">
+        <h4 class="text-uppercase">Upload Images For Gallery</h4>
+        <form>
+          <div class="mb-3">
+            <label for="title" class="form-label">Title:</label>
+            <input type="text" class="form-control" id="title" name="title_image" [(ngModel)]="title_image">
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Description:</label>
+            <input type="text" class="form-control" id="description" name="descrription_image" [(ngModel)]="description_image">
+          </div>
+          <div class="mb-3">
+            <label for="image" class="form-label">Image:</label>
+            <input type="file" class="form-control" id="image" (change)="onImageSelected($event)">
+          </div>
+          <button type="button" class="btn btn-primary" (click)="onSubmitImage()">Upload</button>
+        </form>
+      </div>
+      
+
+
+    <div class="row my-3">
+        <div class="col-md-4 mb-4" *ngFor="let image of images">
+          <div class="card">
+            <img class="card-img-top image-size" [src]="'http://localhost:3000/uploads/' + image.image" alt="{{ image.title }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ image.title }}</h5>
+              <p class="card-text">{{ image.description }}</p>
+              <button class="btn btn-danger" (click)="deleteImage(image._id)">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+  </div>
+
+  
+        
+    </div>
+
+
+    </div>
+  </div>
+
+</div>
+

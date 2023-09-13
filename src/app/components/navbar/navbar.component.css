@@ -1,0 +1,253 @@
+.dropdown-hover:hover .dropdown-menu {
+    display: block;
+  }
+#logo
+{
+    width: 30%;
+    height: 30%;
+    padding-top: 10px;
+   
+    
+}
+
+
+
+.material-symbols-outlined {
+  display: inline-block;
+  font-size: 24px; /* Adjust the font size as needed */
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar
+{
+  position: sticky;
+ top:0;
+ z-index: 100;
+ background-color: rgb(255, 255, 255)!important;
+
+
+ 
+}
+.dropdown-item
+{
+  width: 250px;
+ 
+}
+.navbar-toggler .material-symbols-outlined
+{
+  font-size: 50px!important;
+  margin: 0px!important
+}
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@800&display=swap');
+.nav-item a {
+
+  font-family: 'Domine', serif;
+  font-weight: 800;
+  color: #004136;
+    background:
+      linear-gradient(
+        to right,
+        rgb(255, 255, 255),
+        rgb(255, 255, 255)
+      ),
+      linear-gradient(
+        to right,
+        #1CB582,
+        rgb(94, 255, 20),
+        rgb(36, 168, 10)
+       
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+  
+  .nav-item a:hover {
+    background-size: 0 3px, 100% 3px;
+    color:darkgreen;
+  }
+  .material-symbols-outlined
+  {
+    font-size: 30px;
+    color: #1CB582;
+  padding-top: 10px;
+  }
+
+
+/*===Header Area===*/
+
+.header-logo {
+	position: relative;
+	z-index: 1;
+	padding: 34px 0px;
+}
+
+.header-logo:before {
+	
+	content: "";
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	width: 2500px;
+	z-index: -1;
+	transform: skewX(30deg);
+}
+
+.header-contact-info {
+	position: relative;
+	overflow: hidden;
+	float: right;
+	padding: 33px 0px;
+}
+
+.header-contact-info ul li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 30px;
+	position: relative;
+	padding-left: 45px;
+}
+
+.header-contact-info ul li:last-child {
+	margin-right: 0;
+	border-right: none;
+	padding-right: 0;
+}
+
+.header-contact-info ul li .iocn-holder {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border: 1px solid #ff2b58;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.header-contact-info ul li .iocn-holder span {}
+
+.header-contact-info ul li .iocn-holder span:before {
+	color: #ff2b58;
+}
+
+.header-contact-info ul li .text-holder {
+	padding-left: 20px;
+}
+
+.header-contact-info ul li .text-holder strong {
+	color: #222222;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.header-contact-info ul li .text-holder p {
+	color: #848484;
+	font-size: 15px;
+	font-weight: 400;
+	margin: 0;
+	line-height: 26px;
+}
+
+.top-social-links {
+	float: right;
+	margin: 15px 0;
+}
+
+.top-social-links li {
+	display: inline-block;
+	margin: 0 0 0 15px;
+}
+
+.top-social-links li:first-child {
+	margin: 0;
+}
+
+.top-social-links li a i {
+	color: #848484;
+	font-size: 16px;
+	transition: all 500ms ease;
+}
+
+.top-social-links li a:hover i {
+	color: #f36371;
+}
+
+  
+
+
+@media (max-width: 1200px) {
+  .header-area {
+    display: none;
+    
+  }
+
+}
+
+.line{
+border-top: 5px solid rgb(72, 255, 0);
+     
+}
+
+/* Remove the border on click (active state) using !important */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.navbar-toggler
+{
+  border: none;
+}
+
+
+
+/* BACKGROUND MOVE */
+.button-background-move {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  
+}
+
+.button-background-move:after {
+  content: "";
+  background-color: #1CB582;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+button.navbar-toggler:focus {
+  outline: none;
+}
+
+
+.button-background-move:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-background-move {
+    padding: 13px 50px 13px;
+  }
+}

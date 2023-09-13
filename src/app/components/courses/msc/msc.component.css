@@ -1,0 +1,102 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+    .container {
+      margin-top: 30px;
+    }
+    .course-image {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .course-image img {
+     
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    p{
+      font-family: 'Roboto', sans-serif;
+   
+    }
+    h2{
+        font-family: bebas neue;
+        color: #1CB582;
+    }
+    .syllabus {
+        margin-top: 30px;
+      }
+      .syllabus h4 {
+        margin-bottom: 10px;
+      }
+      table {
+        width: 100%;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+      
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        font-weight: bold;
+      }
+      @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+
+
+      
+      .card {
+        border-radius: 10px;
+        filter: drop-shadow(0 5px 10px 0 #ffffff);
+        width: 300px;
+        height: 200px;
+        background-color: #ffffff;
+        padding: 20px;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        transition: 0.6s ease-in;
+      }
+      
+      .card::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: -15px;
+        right: -15px;
+        background: #1CB582;
+        height:220px;
+        width: 25px;
+        border-radius: 32px;
+        transform: scale(1);
+        transform-origin: 50% 50%;
+        transition: transform 0.25s ease-out;
+      }
+      
+      .card:hover::before{
+          transition-delay:0.2s ;
+      
+        transform: scale(40);
+      }
+      
+      .card:hover{
+          color: #ffffff;
+      
+      }
+      
+      .card p{
+          padding: 10px 0;
+      }
+      .card-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -10px; /* Negative margin to create space between cards */
+      }
+    
+      .card {
+        flex: 0 0 calc(33.33% - 20px); /* Adjust the width and margin as needed */
+        margin: 0 10px; /* Adjust the margin as needed */
+        /* Add other card styles here */
+      }

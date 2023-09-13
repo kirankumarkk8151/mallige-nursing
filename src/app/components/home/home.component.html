@@ -1,0 +1,494 @@
+
+<!--
+<div id="carouselExampleFade" class="carousel slide carousel-fade"data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="assets/image2.jpg" class="d-block w-100 opacity-50 img1" alt="...">
+          <div class="carousel-overlay">
+            <h1 data-aos="fade-right"data-aos-duration="1000">Mallige College of Nursing</h1>
+          
+            <h1 id="best">Best Nursing</h1>
+            <h1 id="best">College In Banglore</h1>
+            <button class="btn apply"id="apply"(click)="apply();">Apply Now</button>
+          </div>
+          
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="assets/image2.jpg" class="d-block w-100 opacity-50 img1" alt="...">
+          <div class="carousel-overlay">
+            <h1>Mallige College of Nursing</h1>
+            <h1 id="best">Best Nursing</h1>
+            <h1 id="best">College In Banglore</h1>
+            <button class="btn apply"id="apply"(click)="apply();">Apply Now</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="assets/image4.jpg" class="d-block w-100 opacity-50 img1" alt="...">
+          <div class="carousel-overlay">
+        
+            <h1>Mallige College of Nursing</h1>
+               <h1 id="best">Best Nursing</h1>
+               <h1 id="best">College In Banglore</h1>
+            <button class="btn apply"id="apply"(click)="apply();">Apply Now</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+       
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+       
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>-->
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" data-aos="fade-in" data-aos-duration="3000">
+          <div class="carousel-item active image-container" data-bs-interval="5000">
+              <img src="assets/2.png"  class="d-block w-100 img-fluid" alt="...">
+          
+              <div class="carousel-overlay">
+                <!-- <button class="btn apply" id="apply" onclick="apply();">Apply Now</button> -->
+                <!-- <h1 data-aos="fade-right"data-aos-duration="1000">Mallige College of Nursing</h1>
+          
+                <h1 id="best">Best Nursing</h1>
+                <h1 id="best">College In Banglore</h1> -->
+
+                <span class="background">
+                  <a
+                  (click)="apply();"
+                      class='button'
+                  >
+                      <svg>
+                          <rect
+                              x="0" y="0" 
+                              fill="none"
+                              width="100%"
+                              height="100%"
+                          />
+                      </svg>
+                      Apply Now
+                  </a>            
+              </span>
+                 
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/3u.png" class="d-block w-100 img-fluid" alt="...">
+              <div class="carousel-overlay">
+                <!-- <h1 data-aos="fade-right"data-aos-duration="1000">Mallige College of Nursing</h1>
+          
+                <h1 id="best">Best Nursing</h1>
+                <h1 id="best">College In Banglore</h1>-->
+                <span class="background">
+                  <a
+                  (click)="apply();"
+                      class='button'
+                  >
+                      <svg>
+                          <rect
+                              x="0" y="0" 
+                              fill="none"
+                              width="100%"
+                              height="100%"
+                          />
+                      </svg>
+                      Apply Now
+                  </a>            
+              </span>
+                  <!-- <button class="btn apply" id="apply" onclick="apply();">Apply Now</button> -->
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/4u.png" class="d-block w-100" alt="...">
+              <div class="carousel-overlay">
+                <!-- <h1 data-aos="fade-right"data-aos-duration="1000">Mallige College of Nursing</h1>
+          
+                <h1 id="best">Best Nursing</h1>
+                <h1 id="best">College In Banglore</h1>-->
+                <span class="background">
+                  <a
+                      (click)="apply();"
+                      class='button'
+                  >
+                      <svg>
+                          <rect
+                              x="0" y="0" 
+                              fill="none"
+                              width="100%"
+                              height="100%"
+                          />
+                      </svg>
+                      Apply Now
+                  </a>            
+              </span>
+                  <!-- <button class="btn apply" id="apply" onclick="apply();">Apply Now</button>  -->
+              </div>
+          </div>
+      </div>
+  
+  </div>
+  
+
+
+  <div class="container-fluid" style="background-color: rgb(20, 10, 61); padding-top: 20px;padding-bottom: 10px; color: white;">
+    <marquee direction="left" behavior="scroll" scrollamount="5" style="white-space: nowrap;">
+      <p *ngFor="let i of announcments" style="display: inline-block; margin-right: 20px;"><em class="text-warning">{{i.title}} :</em> {{ i.description }} | </p> 
+    </marquee>
+  </div>
+  
+
+
+
+
+<!--
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/image4.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/image1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/image2.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>-->
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid  my-5 d-flex justify-content-between">
+        <div class="row">
+          <div class="col-md-6 d-flex flex-column justify-content-center about"data-aos="zoom-in">  
+            
+            <!-- data-aos-duration="500" -->
+            <h2>Mallige College of Nursing</h2>
+            <p class="text-justify">In the Year 2003, Mallige Education Foundation and its Trustees established Mallige College of Nursing to meet the increasing demand for skilled and eminent Nursing Professionals. The Foundation with the expertise knowledge and experience in the Medical Science started Mallige College of Nursing with an aim to impart knowledge through quality education in Health Care Sciences and thereby fulfill the health care needs of the society. The foundation which carries a legacy of more than 42 years in the Health Care Service laid a strong and steady foundation for the College and Hospitals played a vital role in molding the Institution to be a top ranked Educational Institution and the first choice among National and International students.</p>
+   
+          </div>
+          <div class="col-md-6 image-half"data-aos="zoom-in">
+            <img src="assets/building.jpg" alt="Image">
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="container-fluid  my-5 d-flex justify-content-between">
+        <div class="row">
+
+          <div class="col-md-5 image-half"data-aos="zoom-in">
+            <img src="assets/graduation.jpg" alt="Image">
+          </div>
+
+
+          <div class="col-md-7"data-aos="zoom-in" >
+            <h2 class="heading">News & Announcments</h2>
+           <div class="announcment">
+            <div class="marquee" style="--item-count: {{ announcments.length }};">
+            <div class="row">
+              <div class="col-sm-12 d-flex justify-content-center mb-3" *ngFor="let i of announcments">
+            
+                <div *ngIf="i.image !== null && i.image !== ''">   
+<div id="container" class="my-3">	
+	   
+	<div class="product-details">
+		
+	<h1>{{i.title}}</h1>
+			<p class="information">{{i.description}}<br>
+      Date: {{i.date}} - {{i.month}} -{{i.year}}<br>
+      Time: {{i.startTime}} - {{i.endTime}}</p>
+</div>
+	
+<div class="product-image">
+  <img [src]="'http://localhost:3000/uploads/events/' + i.image" alt="{{ i.title }}" class="aimaage" />
+</div>
+</div>
+</div>
+
+
+</div>
+            </div>
+       
+            </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      
+      
+
+
+
+
+    <!---
+<div class="cou">
+  <h1 class="text-center">Courses Offered</h1>
+            
+          <div class="container co">
+            
+            <div class="card"data-aos="fade-up" data-aos-duration="1000">
+              <div class="box">
+                <div class="content">
+                  <h2>01</h2>
+                  <h3>BSc Nursing</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card"data-aos="fade-up" data-aos-duration="1000">
+              <div class="box">
+                <div class="content">
+                  <h2>02</h2>
+                  <h3>MSc Nursing</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card"data-aos="fade-up" data-aos-duration="1000">
+              <div class="box">
+                <div class="content">
+                  <h2>03</h2>
+                  <h3>Diplomo Nursing</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      -->
+
+
+
+
+      
+<!--Start Course Search Section-->
+<!--Gallery Section-->
+<section class="gallery-section sp-three">
+  <h1 class="text-center my-3 heading" >Courses Offered</h1>
+  <div class="container"data-aos="fade-up">
+     
+         
+
+      <div class="row filter-layout d-flex justify-content-center">
+          <article class="col-xl-6 col-lg-6 col-sm-12 filter-item Consulting Growth"data-aos="flip-right">
+              <div class="gallery-item">
+                  <div class="image-box">
+                      <img src="assets/HOSPITAL 3.jpg" alt="">
+                      <div class="overlay">
+                          <a class="link-btn" routerLink="bsc">
+                              <i class="fa fa-link"></i>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="image-content">
+                      <div class="date-box">
+                          <h6>BSc</h6>
+                      </div>
+         
+                      <div class="bottom-text">
+                          <h6 class="text-center"><a routerLink="bsc">Bachelor of Science in Nursing</a></h6>
+                      </div>
+                      <div class="info clearfix">
+                          <div class="float-left"><p><i class="fa fa-calendar" aria-hidden="true"></i>Course Duration: 4 Years</p></div>
+                          <div class="float-right"><p><i class="fa fa-user" aria-hidden="true"></i>60 Students</p></div>
+                      </div>                       
+                  </div>                        
+              </div>                    
+          </article>
+
+          <article class="col-xl-6 col-lg-6 col-sm-12 filter-item Finance Marketing"data-aos="zoom-in">
+              <div class="gallery-item">
+                  <div class="image-box">
+                      <img src="assets/HOSPITAL 1.jpg" alt="">
+                      <div class="overlay">
+                          <a class="link-btn" routerLink="msc">
+                              <i class="fa fa-link"></i>
+                          </a>                                
+                      </div>
+                  </div>
+                  <div class="image-content">
+                      <div class="date-box">
+                          <h6>MSc</h6>
+                      </div>
+          
+                      <div class="bottom-text">
+                        <h6 class="text-center"><a routerLink="msc">Master of Science in Nursing</a></h6>
+                    </div>
+                      <div class="info clearfix">
+                          <div class="float-left"><p><i class="fa fa-calendar" aria-hidden="true"></i>Course Duration: 2 Years</p></div>
+                          <div class="float-right"><p><i class="fa fa-user" aria-hidden="true"></i>15 Students </p></div>
+                      </div>                       
+                  </div>                        
+              </div>
+          </article>
+
+
+
+  </div>
+  </div>
+</section>
+<!--End Gallery Section-->
+
+<!--End Course Search Section-->
+
+
+<div class="test my-5">
+  <figure class="snip1533"data-aos="zoom-out">
+    <figcaption>
+      <blockquote>
+        <p>"Mallige College of Nursing provided me with an exceptional education and clinical experience, equipping me with the skills and confidence to excel in my nursing career."</p>
+      </blockquote>
+      <h3>Deepak</h3>
+      
+    </figcaption>
+  </figure>
+  <figure class="snip1533"data-aos="zoom-out">
+    <figcaption>
+      <blockquote>
+        <p>"I am grateful for Mallige College of Nursing's dedicated faculty and top-notch facilities, which laid the foundation for my successful journey in the field of healthcare."</p>
+      </blockquote>
+      <h3>Karthik</h3>
+     
+    </figcaption>
+  </figure>
+  <figure class="snip1533"data-aos="zoom-out">
+    <figcaption>
+      <blockquote>
+        <p>"Mallige College of Nursing's unwavering commitment to excellence and the supportive environment helped me become a competent and compassionate nurse." </p>
+      </blockquote>
+      <h3>Rajesh</h3>
+      
+    </figcaption>
+  </figure> 
+
+</div>
+
+
+<div class="wrapper ">
+  
+  <div class="scroll-cards ">
+    <h1 class="text-center heading my-5">Messages from Desk</h1>
+    <article class="scroll-cards__item" aria-label="Wie - 1">
+      
+      <p>"Mallige College of Nursing is recognized by Govt. of Karnataka, AICTE, affiliated to Rajiv Gandhi University of Health Sciences, Bangalore. We at Mallige College of Nursing conceptualize to train and bring out the best in the prospective nurses..."</p><a routerLink="chairman">Read More..</a>
+        <h3>Dr. A.C SREERAM</h3>
+      
+      <h4>CHAIRMAN</h4>
+    </article>
+    <article class="scroll-cards__item" aria-label="Wie - 1">
+      
+      <p>I am immensely pleased to know that Mallige college of nursing become alma mater for many of our young and future generations. Success starts with a thought or an idea when nourished with hope and confidence, that idea sprouts, blossoms and leads to action with knowledge...</p><a routerLink="ceo">Read More..</a>
+      <h3>MS.SWATHI SREERAM</h3>
+      <h4>CEO</h4>
+    </article>
+    <article class="scroll-cards__item" aria-label="Wie - 1">
+     
+      <p>"Foresight, ability to seize the opportunity, relentless drive to succeed and tremendous acumen in recognizing the needs of the industry and integrating knowledge with professional inputs are the secrets behind Mallige..."</p><a routerLink="secretary">Read More..</a>
+      <h3>MR.N.RAMESH</h3>
+      <h4>SECRETARY</h4>
+    </article>
+    <article class="scroll-cards__item" aria-label="Wie - 1">
+      
+      <p>"I feel pleasure in extending a very warm welcome to Mallige College of Nursing to the new aspirants seeking admission in this institute, for structuring their career in Nursing field. At Mallige of Nursing, we believe that sustainable development is the key to success..."</p><a routerLink="director">Read More..</a>
+      <h3>DR.SHIVAKUMAR SWAMY</h3>
+      <h4>DIRECTOR</h4>
+    </article>
+    <article class="scroll-cards__item" aria-label="Wie - 1">
+      
+      <p>"Mallige College of Nursing has become an epitome of excellence in rendering quality nursing education through a progressive outlook, energizing thoughts, optimistic motivation and rich rootage in moral and ethical values..."</p><a routerLink="principal">Read More..</a>
+      <h3>Dr. G. RAJESWARI</h3>
+      <h4>PRINCIPAL</h4>
+    </article>  
+  </div>
+</div>
+  
+
+
+<div class="banner ">
+  <div class="row ">
+
+  <div class="students col-sm-3 text-center" data-aos="flip-up"data-aos-duration="500" >
+   <h2>
+     5000+
+   </h2>
+   <h3>Students</h3>
+  </div>
+  <div class="faculty col-sm-3 text-center" data-aos="flip-up" data-aos-duration="500">
+   <h2>
+     30+
+   </h2>
+   <h3>Faculty</h3>
+  </div>
+
+  <div class="placed col-sm-3 text-center" data-aos="flip-up" data-aos-duration="500">
+   <h2>
+     900+
+   </h2>
+   <h3>Students Placed</h3>
+  </div>
+
+  <div class="rank col-sm-3 text-center" data-aos="flip-up" data-aos-duration="500">
+   <h2>
+     90+
+   </h2>
+   <h3>Ranks</h3>
+  </div>
+</div>
+ </div>
+        
+ <h1 class="text-center my-3 heading" >Affiliations/Recognitions</h1>
+ <div class="images-selector d-flex justify-content-center my-4"data-aos="zoom-in">
+  
+  <a routerLink="affiliations" class="img-card img1 mx-2"></a>
+  
+  <a routerLink="affiliations" class="img-card img2"></a>
+   
+  <a routerLink="affiliations" class="img-card img3 mx-2"></a>
+   
+  <a routerLink="affiliations" class="img-card img4"></a>
+ </div>
+
+
+
+
+
+
+  <div class="google-map my-4 container-fluid">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13070.361896776813!2d77.4968230999349!3d13.109204025785386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d3655555555%3A0x813f3dded5afca26!2sMALLIGE%20COLLEGE%20OF%20NURSING!5e0!3m2!1sen!2sin!4v1689527807115!5m2!1sen!2sin" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    
+    
+    

@@ -1,0 +1,35 @@
+<app-banner [title]="'Gallery'"></app-banner>
+
+<!-- https://stackoverflow.com/questions/32802202/how-to-center-a-flex-container-but-left-align-flex-items -->
+
+<!-- <section class="team">
+  <div class="grid">
+    <figure class="effect-steve my-3 mx-3 "*ngFor="let image of images">
+      <img [src]="'http://localhost:3000/uploads/' + image.image" alt="{{ image.title }}" />
+      <figcaption>
+        <h2><span>{{image.title}}</span></h2>
+        <p>{{image.description}} </p>
+      </figcaption>
+    </figure>
+  </div>
+</section> -->
+
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet">
+
+
+  <div class="gallery-image">
+    <div class="img-box"*ngFor="let image of images">
+      <img [src]="'http://localhost:3000/uploads/' + image.image" alt="{{ image.title }}" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>{{image.title}}</p>
+          <p class="opacity-low">{{image.description}}</p>
+        </div>
+      </div> 
+    </div>
+   
+  </div>
+
